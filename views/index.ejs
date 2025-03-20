@@ -1,1 +1,14 @@
 
+<%- include("partials/header.ejs") %>
+
+    <form action="/submit">
+        <label for="niknameUser">Nikname:</label><br>
+        <input type="text" id="niknameUser" name="niknameUser" placeholder="Nikname"><br>
+        <label for="titlePost">Post Title:</label><br>
+        <input type="text" id="titlePost" name="titlePost" placeholder="Post Title"><br>
+        <label for="postContent">Post Content:</label><br>
+        <textarea type="text" id="postContent" name="postContent" rows="20" cols="100" placeholder="Insert here your Post Content..."></textarea><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <%- include("partials/footer.ejs") %>

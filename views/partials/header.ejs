@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog App</title>
+  </head>
+  <body>
+    <% if (!seeAllPosts) { %>
+      <h1>Welcome to your Blog App!</h1>
+      <button><a href="/all-posts">See all your posts</a></button>
+    <% } else { %>
+      <h1>All your Posts!</h1>
+      <button><a href="/">Add New Post</a></button>
+    <% } %>
+

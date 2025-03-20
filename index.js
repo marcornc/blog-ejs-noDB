@@ -6,8 +6,15 @@ const port = 3000
 
 
 
+
 app.get("/", (req, res)=>{
-    res.send("Hello World!")
+
+    res.render("index.ejs", {seeAllPosts: false})
+})
+
+app.get("/all-posts", (req, res)=>{
+
+    res.render("post-list.ejs", {seeAllPosts: true})
 })
 
 app.listen(port, ()=>{
