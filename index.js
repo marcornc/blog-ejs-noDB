@@ -45,14 +45,16 @@ function readEachFile(arrFiles) {
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
+app.use(express.static("public"))
+
 app.get("/", (req, res) => {
   res.render("index.ejs", { seeAllPosts: false });
 });
 
 app.get("/all-posts", (req, res) => {
-  const allFilesName = showAllFileInDirectory("./blog-posts");
-  console.log(allFilesName);
-  readEachFile(allFilesName)
+//   const allFilesName = showAllFileInDirectory("./blog-posts");
+//   console.log(allFilesName);
+//   readEachFile(allFilesName)
   res.render("post-list.ejs", { seeAllPosts: true });
 });
 

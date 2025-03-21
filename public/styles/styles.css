@@ -1,0 +1,56 @@
+:root{
+    --main-color: #bbdcff;
+    --title-btn-color: #007bff;
+    --text-bg: #c6e2ff;
+    --text-color: #00152c;
+    --shadow: #00152c48;
+}
+
+body{
+    background-color: var(--main-color) ;
+
+}
+
+.title{
+    text-align: center;
+}
+
+.btn {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 2rem 1rem 0;
+    
+
+}
+
+.btn a {
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: var(--title-btn-color);
+    color: white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px var(--shadow);
+}
+
+.btn-submit{
+    background-color: var(--title-btn-color);
+    color: white;
+    border-radius: 5px;
+    padding: 10px 15px;
+    border: none;
+    box-shadow: 1px 1px 1px 1px var(--shadow);
+}
+
+.text-area{
+    all: unset;
+    background-color: var(--text-bg);
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+    box-shadow: 1px 1px 1px 1px var(--shadow);
+    padding: 0.5rem;
+}
+
+
+form{
+    margin: 0 10%;
+}

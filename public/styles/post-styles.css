@@ -1,0 +1,21 @@
+
+
+.post-card{
+    background-color: var(--text-bg);
+    border-radius: 10px;
+    width: 60%;
+    padding: 1rem;
+    margin: 0 auto 1rem auto;
+    display: block;
+    box-shadow: 1px 1px 1px 1px var(--shadow);
+}
+
+.post-title{
+    font-size: x-large
+}
+
+.post-date{
+    text-align: right;
+    font-style: italic;
+    margin-top: 0;
+}
