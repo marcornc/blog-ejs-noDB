@@ -1,23 +1,17 @@
-
-
 <%- include("partials/header.ejs") %>
 
-<article class="post-card">
-    <h2 class="post-title">Post Title</h2>
-    <h5 class="post-date">10.30 - 03.03.2025</h5>
-    <p class="post-content">asdnkjiaewfnv vjeovij  veiwvj vpo0 evj jdcv ewj v9wvj podvj rvw 
-        dsvdsvds
-        sdvdsvdsvjuf  fg hniej f2hj 92j gf92hj gierh giqhg ihqgihgiqhg ihg3q9igh 93qhggh ik ghknv iernvi noinvoiren gigigj ijginfv eibhnreibhoisnvinvklnvkn r jgpoj jr  ro9gj je ovijerqkeirj goiqerjg irhjeoi rhegiehg oieh goie ghoihe giq hgiqfjiqej ij ei jeihegèi 34u tiy dnm nkv aposg jurigh kbnadkv j rqeig hendasfjihrek m ow jirgvm ew hjreunwef rebnu
-    </p>
-</article>
-<article class="post-card">
-    <h2 class="post-title">Post Title</h2>
-    <h5 class="post-date">10.30 - 03.03.2025</h5>
-    <p class="post-content">asdnkjiaewfnv vjeovij  veiwvj vpo0 evj jdcv ewj v9wvj podvj rvw 
-        dsvdsvds
-        sdvdsvdsvjuf  fg hniej f2hj 92j gf92hj gierh giqhg ihqgihgiqhg ihg3q9igh 93qhggh ik ghknv iernvi noinvoiren gigigj ijginfv eibhnreibhoisnvinvklnvkn r jgpoj jr  ro9gj je ovijerqkeirj goiqerjg irhjeoi rhegiehg oieh goie ghoihe giq hgiqfjiqej ij ei jeihegèi 34u tiy dnm nkv aposg jurigh kbnadkv j rqeig hendasfjihrek m ow jirgvm ew hjreunwef rebnu
-    </p>
-</article>
+<div id="posts-container">
 
+  <% if(locals.allPosts){ 
+    allPosts.forEach((post) => {%>
+
+      <article class="post-card">
+        <h2 class="post-title"><%= post.title %></h2>
+        <h5 class="post-date"><%= post.date %></h5>
+        <p class="post-content"><%= post.content %></p>
+      </article>
+    <%}) 
+  } %>
+</div>
 
 <%- include("partials/footer.ejs") %>

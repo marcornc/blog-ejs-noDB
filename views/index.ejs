@@ -2,13 +2,13 @@
 <%- include("partials/header.ejs") %>
 
     <form action="/submit" method="post">
-        <label for="userNikname">Nikname:</label><br>
-        <input class="text-area" type="text" id="userNikname" name="userNikname" placeholder="Nikname" required><br>
-        <label for="postTitle">Post Title:</label><br>
-        <input class="text-area" type="text" id="postTitle" name="postTitle" placeholder="Post Title" required><br>
-        <label for="postContent">Post Content:</label><br>
-        <textarea class="text-area" type="text" id="postContent" name="postContent" rows="20" cols="100" placeholder="Insert here your Post Content..." required></textarea><br>
-        <input class="btn-submit" type="submit" value="Submit">
+        <label for="user-nikname">Nikname:</label><br>
+        <input class="text-area" type="text" id="user-nikname" name="user-nikname" placeholder="Nikname" required><br>
+        <label for="post-title">Post Title:</label><br>
+        <input class="text-area" type="text" id="post-title" name="post-title" placeholder="Post Title" required><br>
+        <label for="post-content">Post Content:</label><br>
+        <textarea class="text-area" type="text" id="post-content" name="post-content" rows="20" cols="100" placeholder="Insert here your Post Content..." required></textarea><br>
+        <input class="btn-submit" id="sub-btn" type="submit" value="Submit">
     </form>
 
     <%- include("partials/footer.ejs") %>
